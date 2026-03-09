@@ -28,7 +28,7 @@ const Footer = () => {
                             </span>
                         </div>
                         <p className="text-gray-400 font-sans max-w-sm mb-6">
-                            <span className="text-paper font-bold">Where Exceptions Become Innovation.</span> The ultimate 48-hour battleground for developers, designers, and visionaries.
+                            <span className="text-paper font-bold">Where Exceptions Become Innovation.</span> The ultimate 24-hour battleground for developers, designers, and visionaries.
                         </p>
                         <div className="flex space-x-4 text-gray-400">
                             <a href="#" className="hover:text-goku-yellow transition-colors"><Twitter size={24} /></a>

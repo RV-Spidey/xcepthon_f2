@@ -231,7 +231,7 @@ const Hero = () => {
           >
             <Terminal size={14} className="text-white" />
             <span className="text-sm font-sans text-white tracking-widest uppercase font-bold">
-              March 23-24, 2026
+              March 21-22, 2026
             </span>
           </motion.div>
 
@@ -263,7 +263,7 @@ const Hero = () => {
             className="max-w-xl mx-auto text-gray-300 font-sans text-sm sm:text-base md:text-xl mb-10 md:mb-12"
           >
             Unleash your potential, push beyond the breaking point, and forge
-            solutions that redefine the limits. 48 hours of intense coding,
+            solutions that redefine the limits. 24 hours of intense coding,
             collaboration, and creation.
           </motion.p>
 
