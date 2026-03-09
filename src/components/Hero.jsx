@@ -241,7 +241,7 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="font-heading text-5xl sm:text-7xl md:text-9xl lg:text-[12rem] leading-none tracking-tight text-white mb-2 relative w-full"
           >
-            <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-goku-yellow to-[#B8A58D] drop-shadow-2xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-b from-white via-goku-yellow font-[shredded] to-[#B8A58D] drop-shadow-2xl">
               XCEPTHON
             </span>
             <div className="absolute -inset-x-2 sm:-inset-x-10 top-1/2 -translate-y-1/2 h-[4px] bg-goku-yellow opacity-80 mix-blend-screen shadow-[0_0_15px_rgba(216,197,173,0.8)] z-20 pointer-events-none scale-x-0 animate-[strike_1s_ease-out_0.8s_forwards]" />
