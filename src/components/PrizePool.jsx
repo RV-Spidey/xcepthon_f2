@@ -163,84 +163,95 @@ const PrizePool = () => {
           </div>
 
           {/* ── RIGHT: Prize breakdown + Sponsor ────────────────────── */}
-          <div className="flex flex-col gap-5 lg:w-[320px] flex-shrink-0">
+          <div className="flex justify-center lg:justify-end gap-6 lg:w-[320px] flex-shrink-0">
             {/* Prize Breakdown Card */}
             <motion.div
               style={{ y: rightCard1Y }}
-              className="relative rounded-2xl overflow-hidden p-6 flex-shrink-0"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.8 }}
+              whileHover={{ scale: 1.03 }}
+              className="relative w-full max-w-[320px] rounded-2xl p-6 overflow-hidden backdrop-blur-xl border border-white/10"
             >
+              {/* Background Glow */}
+              <div className="absolute inset-0 -z-10 bg-gradient-to-br from-[#0b0b25] via-[#14143a] to-[#1a1a45]" />
+
+              {/* Soft Glow */}
+              <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-400/10 blur-3xl rounded-full" />
+              <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-purple-500/10 blur-3xl rounded-full" />
+
+              {/* Pattern Overlay */}
               <div
-                className="absolute inset-0 pointer-events-none"
-                style={{
-                  background:
-                    "linear-gradient(140deg, #111130 0%, #1a1a45 100%)",
-                  border: "1px solid rgba(255,255,255,0.08)",
-                  boxShadow: "0 0 30px rgba(34,211,238,0.08)",
-                  zIndex: -1,
-                }}
-              ></div>
-              {/* Zigzag / chevron pattern overlay */}
-              <div
-                className="absolute inset-0 opacity-[0.04] pointer-events-none"
+                className="absolute inset-0 opacity-[0.05] pointer-events-none"
                 style={{
                   backgroundImage:
-                    "repeating-linear-gradient(45deg, rgba(255,255,255,0.5) 0, rgba(255,255,255,0.5) 1px, transparent 0, transparent 50%)",
+                    "repeating-linear-gradient(45deg, rgba(255,255,255,0.5) 0px, rgba(255,255,255,0.5) 1px, transparent 1px, transparent 50%)",
                   backgroundSize: "18px 18px",
-                  zIndex: -1,
                 }}
               />
 
-              {/* 1st Prize */}
-              <div className="relative z-10 flex items-center justify-between mb-4 pb-4 border-b border-white/10">
+              {/* Title */}
+              <h3 className="text-sm text-gray-400 tracking-widest uppercase mb-5 font-sans">
+                Prize Pool
+              </h3>
+
+              {/* First Prize */}
+              <div className="flex items-center justify-between mb-6 pb-6 border-b border-white/10">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center shadow-[0_0_15px_rgba(250,204,21,0.4)]">
-                    <Trophy size={18} className="text-white" />
+                  <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-yellow-400 to-orange-500 flex items-center justify-center shadow-[0_0_20px_rgba(250,204,21,0.45)]">
+                    <Trophy size={20} className="text-white" />
                   </div>
-                  <span className="font-sans text-sm text-gray-400 tracking-widest uppercase">
+
+                  <span className="text-sm text-gray-400 uppercase tracking-widest">
                     First Prize
                   </span>
                 </div>
+
                 <span
-                  className="font-heading text-4xl text-white"
+                  className="text-4xl font-bold text-white"
                   style={{ textShadow: "0 0 20px rgba(250,204,21,0.5)" }}
                 >
-                  ₹15k
+                  ₹15K
                 </span>
               </div>
 
-              {/* 2nd & 3rd row */}
-              <div className="relative z-10 grid grid-cols-2 gap-4">
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-slate-400 to-slate-600 flex items-center justify-center">
-                      <Medal size={13} className="text-white" />
+              {/* Second & Third */}
+              <div className="grid grid-cols-2 gap-4">
+                {/* Second Prize */}
+                <div className="flex flex-col gap-2 p-4 rounded-xl bg-white/[0.03] border border-white/5">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-slate-400 to-slate-600 flex items-center justify-center">
+                      <Medal size={14} className="text-white" />
                     </div>
-                    <span className="font-sans text-xs text-gray-500 uppercase tracking-wider">
+
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">
                       Second
                     </span>
                   </div>
-                  <span className="font-heading text-3xl text-white">₹10k</span>
+
+                  <span className="text-2xl font-bold text-white">₹10K</span>
                 </div>
-                <div className="flex flex-col gap-1">
-                  <div className="flex items-center gap-2 mb-1">
-                    <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-amber-700 to-orange-900 flex items-center justify-center">
-                      <Award size={13} className="text-white" />
+
+                {/* Third Prize */}
+                <div className="flex flex-col gap-2 p-4 rounded-xl bg-white/[0.03] border border-white/5">
+                  <div className="flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-700 to-orange-900 flex items-center justify-center">
+                      <Award size={14} className="text-white" />
                     </div>
-                    <span className="font-sans text-xs text-gray-500 uppercase tracking-wider">
+
+                    <span className="text-xs text-gray-500 uppercase tracking-wider">
                       Third
                     </span>
                   </div>
-                  <span className="font-heading text-3xl text-white">₹5k</span>
+
+                  <span className="text-2xl font-bold text-white">₹5K</span>
                 </div>
               </div>
             </motion.div>
-
-            {/* Sponsor Card */}
-            <motion.div
+          </div>
+          {/* Sponsor Card */}
+          {/* <motion.div
               style={{ y: rightCard2Y }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -262,7 +273,7 @@ const PrizePool = () => {
                 Our Sponsor
               </p>
               <div className="flex items-center gap-3 relative z-10">
-                {/* Orange triangle logo placeholder */}
+               
                 <div
                   className="flex-shrink-0 w-12 h-12 flex items-center justify-center rounded-lg"
                   style={{
@@ -288,8 +299,7 @@ const PrizePool = () => {
                   </p>
                 </div>
               </div>
-            </motion.div>
-          </div>
+            </motion.div> */}
         </div>
       </div>
     </section>
