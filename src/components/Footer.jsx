@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, Instagram } from "lucide-react";
 
 const Footer = () => {
   const handleNavClick = (e, href) => {
@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-goku-yellow/10 blur-[150px] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-4">
               <span className="font-[shredded] text-3xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-goku-orange to-goku-yellow">
@@ -35,10 +35,13 @@ const Footer = () => {
               visionaries.
             </p>
             <div className="flex space-x-4 text-gray-400">
-              <a href="#" className="hover:text-goku-yellow transition-colors">
-                <Twitter size={24} />
+              <a
+                href="https://www.instagram.com/asci.cep?igsh=NmQwMHFtMXpoOGty"
+                className="hover:text-goku-yellow transition-colors"
+              >
+                <Instagram size={24} />
               </a>
-              <a href="#" className="hover:text-goku-yellow transition-colors">
+              {/* <a href="#" className="hover:text-goku-yellow transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="#" className="hover:text-goku-yellow transition-colors">
@@ -46,7 +49,7 @@ const Footer = () => {
               </a>
               <a href="#" className="hover:text-goku-yellow transition-colors">
                 <Mail size={24} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -107,29 +110,6 @@ const Footer = () => {
                   className="hover:text-goku-yellow transition-colors"
                 >
                   FAQ
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-heading text-xl text-white mb-4 tracking-wide">
-              Legal
-            </h4>
-            <ul className="space-y-2 font-sans text-gray-400">
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Code of Conduct
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  Terms of Service
                 </a>
               </li>
             </ul>
