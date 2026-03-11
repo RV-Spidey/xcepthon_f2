@@ -52,7 +52,7 @@ const Hero = () => {
 
   const yText = useTransform(
     scrollYProgress,
-    [0, 0.3, 0.8],
+    [0, 0.3, 0.55],
     ["100vh", "100vh", "0vh"],
   );
 
