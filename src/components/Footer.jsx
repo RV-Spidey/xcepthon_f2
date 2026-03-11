@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Twitter, Linkedin, Mail, Instagram } from "lucide-react";
 
 const Footer = () => {
   const handleNavClick = (e, href) => {
@@ -35,10 +35,13 @@ const Footer = () => {
               visionaries.
             </p>
             <div className="flex space-x-4 text-gray-400">
-              <a href="#" className="hover:text-goku-yellow transition-colors">
-                <Twitter size={24} />
+              <a
+                href="https://www.instagram.com/asci.cep?igsh=NmQwMHFtMXpoOGty"
+                className="hover:text-goku-yellow transition-colors"
+              >
+                <Instagram size={24} />
               </a>
-              <a href="#" className="hover:text-goku-yellow transition-colors">
+              {/* <a href="#" className="hover:text-goku-yellow transition-colors">
                 <Linkedin size={24} />
               </a>
               <a href="#" className="hover:text-goku-yellow transition-colors">
@@ -46,7 +49,7 @@ const Footer = () => {
               </a>
               <a href="#" className="hover:text-goku-yellow transition-colors">
                 <Mail size={24} />
-              </a>
+              </a> */}
             </div>
           </div>
 
