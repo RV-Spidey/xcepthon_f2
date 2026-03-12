@@ -14,13 +14,13 @@ const Schedule = () => {
       highlight: true,
     },
 
-    { time: "12:00 PM", title: "Mentorship Round 1", day: "Day 1" },
+    { time: "12:00 PM", title: "Evaluation Round 1", day: "Day 1" },
 
     { time: "1:00 PM - 2:00 PM", title: "Food", day: "Day 1" },
 
     { time: "05:00 PM", title: "Tea Break", day: "Day 1" },
 
-    { time: "07:00 PM", title: "Mentorship Round 2", day: "Day 1" },
+    { time: "07:00 PM", title: "Evalution Round 2", day: "Day 1" },
 
     { time: "09:00 PM", title: "Dinner", day: "Day 1" },
 
