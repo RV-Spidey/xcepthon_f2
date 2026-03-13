@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Schedule from "./components/Schedule";
 import Tracks from "./components/Tracks";
+import Registration from "./components/Registration";
 import FAQ from "./components/FAQ";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <About />
       <Tracks />
+      <Registration />
       <PrizePool />
       <Schedule />
       <Sponsors />

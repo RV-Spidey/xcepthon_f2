@@ -33,22 +33,22 @@ const Hero = () => {
 
   const yMountainsBg = useTransform(
     scrollYProgress,
-    [0, 0.8, 1],
+    [0, 0.7, 1],
     ["0px", "0px", "500px"],
   );
   const yMountainsMt2 = useTransform(
     scrollYProgress,
-    [0, 0.8, 1],
+    [0, 0.7, 1],
     ["0px", "0px", "550px"],
   );
   const yMountainsMt1 = useTransform(
     scrollYProgress,
-    [0, 0.8, 1],
+    [0, 0.7, 1],
     ["0px", "0px", "450px"],
   );
 
   const xSun = useTransform(scrollYProgress, [0, 0.4], ["-250px", "0px"]);
-  const ySun = useTransform(scrollYProgress, [0, 0.4], ["0px", "900px"]);
+  const ySun = useTransform(scrollYProgress, [0, 0.4], ["0px", "1120px"]);
 
   const yText = useTransform(
     scrollYProgress,
@@ -62,12 +62,12 @@ const Hero = () => {
 
   const scaleMountains = useTransform(
     scrollYProgress,
-    [0, 0.8, 1],
+    [0, 0.7, 1],
     [1.18, 1.18, 1],
   );
 
   return (
-    <section ref={ref} className="relative min-h-[500vh] w-full bg-goku-dark">
+    <section ref={ref} className="relative min-h-[250vh] md:min-h-[500vh] w-full bg-goku-dark">
       <div className="sticky top-0 h-screen w-full">
         {/* BACKGROUND & PARALLAX LAYER - CLIPPED TO VIEWPORT */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
