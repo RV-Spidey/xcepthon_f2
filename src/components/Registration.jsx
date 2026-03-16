@@ -17,7 +17,7 @@ const milestones = [
     title: "Registration & Abstract Submission Closes",
     desc: "Last day to register and submit your project abstract. Make sure your idea is crisp and compelling.",
     color: "from-[#f12711] to-[#f5af19]",
-    done: false,
+    done: true,
   },
   {
     icon: <Users size={22} className="text-white" />,
