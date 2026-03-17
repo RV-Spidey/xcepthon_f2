@@ -4,6 +4,7 @@ import About from "./components/About";
 import Schedule from "./components/Schedule";
 import Tracks from "./components/Tracks";
 import Registration from "./components/Registration";
+import SelectedTeams from "./components/SelectedTeams";
 import FAQ from "./components/FAQ";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer";
@@ -19,6 +20,7 @@ function App() {
       <About />
       <Tracks />
       <Registration />
+      <SelectedTeams />
       <PrizePool />
       <Schedule />
       <Sponsors />
