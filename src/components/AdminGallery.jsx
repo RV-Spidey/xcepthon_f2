@@ -309,7 +309,11 @@ const AdminGallery = () => {
             </motion.div>
           )}
         </div>
-
+        <div className="mt-6 p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/60">
+          <p>
+            Hover over images to see delete option. All deletions are permanent.
+          </p>
+        </div>
         <div className="mt-8 rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-6">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold">The Saga Timeline Controls</h2>
@@ -379,12 +383,6 @@ const AdminGallery = () => {
               ))}
             </div>
           )}
-        </div>
-
-        <div className="mt-6 p-4 rounded-xl bg-white/5 border border-white/10 text-sm text-white/60">
-          <p>
-            Hover over images to see delete option. All deletions are permanent.
-          </p>
         </div>
       </div>
     </div>
