@@ -33,7 +33,7 @@ const milestones = [
     title: "Hackathon Kicks Off",
     desc: "The clock starts. 24 hours of building, breaking, and innovating. Let's make exceptions count.",
     color: "from-[#b224ef] to-[#7579ff]",
-    done: false,
+    done: true,
   },
 ];
 
